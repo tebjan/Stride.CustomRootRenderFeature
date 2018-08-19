@@ -84,7 +84,7 @@ namespace CustomRootRenderFeature
                 myCustomShader.Parameters.Set(MyCustomShaderKeys.TextureScale, myRenderObject.TextureScale);
                 myCustomShader.Parameters.Set(MyCustomShaderKeys.Color, myRenderObject.Color);
 
-                // Orepare pipeline state
+                // Prepare pipeline state
                 pipelineState.State.RootSignature = myCustomShader.RootSignature;
                 pipelineState.State.EffectBytecode = myCustomShader.Effect.Bytecode;
                 pipelineState.State.Output.CaptureState(commandList);

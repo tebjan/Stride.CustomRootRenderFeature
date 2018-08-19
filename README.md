@@ -3,7 +3,7 @@
 Demo implementation of a xenko root render feature that shows up in the Xenko graphics compositor. A root render feature can be used to do custom drawing and to build your own shader pipelines with the [xenko low level graphics API](https://github.com/xenko3d/xenko/tree/master/sources/engine/Xenko.Graphics). The advantage of it is, that the drawing will happen with the main camera matrix and backbuffer textures and therefore integrate correctly into the scene rendering.
 
 ## Code Overview
- The main parts of the example are  two C# classes and a shader and can be found in the folder [CustomRootRenderFeature.Game\MyRootRenderFeature](https://github.com/tebjan/Xenko.CustomRootRenderFeature/tree/master/CustomRootRenderFeature/CustomRootRenderFeature/CustomRootRenderFeature.Game/MyRootRenderFeature).
+ The main parts of the example are  two C# classes and a shader and can be found in the folder [CustomRootRenderFeature.Game\MyRootRenderFeature](https://github.com/tebjan/Xenko.CustomRootRenderFeature/tree/master/CustomRootRenderFeature/CustomRootRenderFeature.Game/MyRootRenderFeature).
 
 If you inherit from RootRenderFeature the custom class shows up in the graphics compositor in GameStudio:
 
@@ -19,7 +19,7 @@ The order of things should then basically be:
  3. Custom draw call
 
 ### Manage custom render objects by code
-Render objects need to be added and removed to the RenderObjects collection of a VisibilityGroup manually. This can be done in a script as you can see in the [MyRenderObjectManagerScript](https://github.com/tebjan/Xenko.CustomRootRenderFeature/blob/master/CustomRootRenderFeature/CustomRootRenderFeature/CustomRootRenderFeature.Game/ManageRenderObjectByCode/MyRenderObjectManagerScript.cs#L68).
+Render objects need to be added and removed to the RenderObjects collection of a VisibilityGroup manually. This can be done in a script as you can see in the [MyRenderObjectManagerScript](https://github.com/tebjan/Xenko.CustomRootRenderFeature/blob/master/CustomRootRenderFeature/CustomRootRenderFeature.Game/ManageRenderObjectByCode/MyRenderObjectManagerScript.cs#L68).
 
 ```csharp
 var myRenderObject = new MyRenderObject();
@@ -31,7 +31,7 @@ VisibilityGroup.RenderObjects.Add(myRenderObject);
 ```
 
 ### Manage custom render objects in Game Studio
-It is also possible to add and remove your custom render objects via the Game Studio UI to the scene. For that you need to implement an EntityComponent that can be added to a game Entity and an EntityProcessor that updates the custom render object and adds it to a visibility group. The example classes can be found in the folder [CustomRootRenderFeature.Game\ManageRenderObjectByGameStudio](https://github.com/tebjan/Xenko.CustomRootRenderFeature/tree/master/CustomRootRenderFeature/CustomRootRenderFeature/CustomRootRenderFeature.Game/ManageRenderObjectByGameStudio)
+It is also possible to add and remove your custom render objects via the Game Studio UI to the scene. For that you need to implement an EntityComponent that can be added to a game Entity and an EntityProcessor that updates the custom render object and adds it to a visibility group. The example classes can be found in the folder [CustomRootRenderFeature.Game\ManageRenderObjectByGameStudio](https://github.com/tebjan/Xenko.CustomRootRenderFeature/tree/master/CustomRootRenderFeature/CustomRootRenderFeature.Game/ManageRenderObjectByGameStudio)
 
 Once this is done, you can add your entity component to any game entity:
 

@@ -5,6 +5,7 @@ Demo implementation of a xenko root render feature that shows up in the Xenko gr
  The main parts of the example are  two C# classes and a shader and can be found in the folder [CustomRootRenderFeature.Game\MyRootRenderFeature](https://github.com/tebjan/Xenko.CustomRootRenderFeature/tree/master/CustomRootRenderFeature/CustomRootRenderFeature/CustomRootRenderFeature.Game/MyRootRenderFeature).
 
 If you inherit from RootRenderFeature the custom class shows up in the graphics compositor in GameStudio:
+
 ![Add to compositor](https://raw.githubusercontent.com/tebjan/Xenko.CustomRootRenderFeature/master/images/01_AddToCompositor.PNG)
 
 After adding the custom root render feature select it and add a SimpleGroupToRenderStageSelector and select the render stage in which you want to draw. Typically this is the *Opaque* stage.

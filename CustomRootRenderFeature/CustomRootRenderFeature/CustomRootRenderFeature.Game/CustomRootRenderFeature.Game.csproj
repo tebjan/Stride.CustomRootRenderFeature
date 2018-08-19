@@ -10,4 +10,37 @@
       <PrivateAssets>contentfiles;analyzers</PrivateAssets>
     </PackageReference>
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Background\BackgroundCubemapShader.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BackgroundCubemapShader.xksl</DependentUpon>
+    </Compile>
+    <Compile Update="Background\BackgroundShader.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BackgroundShader.xksl</DependentUpon>
+    </Compile>
+    <Compile Update="MyRootRenderFeature\MyCustomShader.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MyCustomShader.xksl</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Background\BackgroundCubemapShader.xksl">
+      <Generator>XenkoShaderKeyGenerator</Generator>
+      <LastGenOutput>BackgroundCubemapShader.cs</LastGenOutput>
+    </None>
+    <None Update="Background\BackgroundShader.xksl">
+      <Generator>XenkoShaderKeyGenerator</Generator>
+      <LastGenOutput>BackgroundShader.cs</LastGenOutput>
+    </None>
+    <None Update="MyRootRenderFeature\MyCustomShader.xksl">
+      <Generator>XenkoShaderKeyGenerator</Generator>
+      <LastGenOutput>MyCustomShader.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
 </Project>

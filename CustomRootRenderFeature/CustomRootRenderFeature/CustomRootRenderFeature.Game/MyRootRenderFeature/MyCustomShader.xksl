@@ -1,0 +1,20 @@
+// Copyright (c) Xenko contributors (https://xenko.com) and Silicon Studio Corp. (https://www.siliconstudio.co.jp)
+// Distributed under the MIT license. See the LICENSE.md file in the project root for more information.
+
+shader MyCustomShader : ShaderBase, Transformation, Texturing, PositionStream4
+{
+    stage float TextureScale;
+    stage float4 Color;
+
+    //vertex shader
+    stage override void VSMain()
+    { 
+        streams.ShadingPosition = mul(streams.Position, WorldViewProjection);
+    }
+
+    //pixel shader
+    stage override void PSMain()
+    {
+        streams.ColorTarget = Texture0.Sample(LinearRepeatSampler, streams.TexCoord * TextureScale) * Color;
+    }
+};

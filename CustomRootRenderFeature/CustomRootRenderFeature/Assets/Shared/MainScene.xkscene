@@ -11,6 +11,8 @@ Hierarchy:
         - ref!! 521206a7-7ac2-4796-803d-3420204507fe
         - ref!! 9065903f-90b3-4d39-a679-70f9789ef36b
         - ref!! b3c7b27f-9300-4655-8d07-1e6d5643a7eb
+        - ref!! 9ebd777e-02bb-4515-8b5d-1eb16f45adc2
+        - ref!! dd795cd3-307b-48c0-9cf9-526ee24b150f
     Parts:
         -   Entity:
                 Id: 096f3590-6a6b-49d6-81a1-6725b8e87dda
@@ -43,8 +45,8 @@ Hierarchy:
                 Components:
                     63cd890e3cf4a0c947287cb0a9c1df63: !TransformComponent
                         Id: bbe63d94-3005-4b17-9193-a11e17ed78dd
-                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
-                        Rotation: {X: 0.0, Y: 0.829037547, Z: 0.0, W: 0.5591929}
+                        Position: {X: 2.76464176, Y: 0.6, Z: 3.17955732}
+                        Rotation: {X: 0.0, Y: 0.190808773, Z: 0.0, W: 0.9816272}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     8288b4272e90d43138da7082a623d09e: !CameraComponent
@@ -92,6 +94,21 @@ Hierarchy:
                         Model: c19f8d3b-dff9-425e-a4e5-898aa2fe20f5:Ground
                         Materials: {}
         -   Entity:
+                Id: 9ebd777e-02bb-4515-8b5d-1eb16f45adc2
+                Name: MyEntity
+                Components:
+                    1a77dadb077ea5ccc340302c2cf93619: !TransformComponent
+                        Id: cd8b7f8a-ba7c-42a7-9824-1863ca10f2a3
+                        Position: {X: 1.23315263, Y: 0.6233795, Z: -0.9471961}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    65ac729ccf0907aa1a5cc58500832142: !MyEntityComponent
+                        Id: aa425d3b-e657-45f4-9f28-725ed8600771
+                        Texture: cfeaab03-6453-4cb7-92a2-37f12d116959:Xenko_Logo
+                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        TextureScale: 2.0
+        -   Entity:
                 Id: b3c7b27f-9300-4655-8d07-1e6d5643a7eb
                 Name: Sphere
                 Components:
@@ -104,4 +121,19 @@ Hierarchy:
                     d1cf918ac418bfa1dded4e719e0d20ad: !ModelComponent
                         Id: d287fccc-ba07-4fef-8ffa-0e9cea0a8ad7
                         Model: e546e841-0bcc-4207-95c6-1d7fb65cdb46:Sphere
-                        Materials: {}
+                        Materials:
+                            c631ad4c157823597b55d1e0e3c3076f~0: c5267e6c-a703-4255-91fb-71f7537a4325:Sphere Material
+        -   Entity:
+                Id: dd795cd3-307b-48c0-9cf9-526ee24b150f
+                Name: MyRenderObjectManagerScript
+                Components:
+                    d4b78879b3c27cdf2c271e8912cf84ed: !TransformComponent
+                        Id: 6e2de7e3-f14e-4a62-b203-1991ad0d03ed
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    5378e65a4c9d9e2b9dc9754b94ac7600: !CustomRootRenderFeature.MyRenderObjectManagerScript,CustomRootRenderFeature.Game
+                        Id: f1aab9b5-dca3-4136-8815-8c39e7974bd9
+                        CountX: 10
+                        CountY: 10

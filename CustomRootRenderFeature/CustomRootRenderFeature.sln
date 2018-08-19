@@ -1,16 +1,16 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 14.0.23107.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomRootRenderFeature", "CustomRootRenderFeature", "{D2861919-FFD5-4301-BC25-4EF8D65D86F4}"
 	ProjectSection(XenkoPackage) = preProject
 		CustomRootRenderFeature/CustomRootRenderFeature.xkpkg = CustomRootRenderFeature/CustomRootRenderFeature.xkpkg
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRootRenderFeature.Windows", "CustomRootRenderFeature\CustomRootRenderFeature.Windows\CustomRootRenderFeature.Windows.csproj", "{B5D7B8FF-F3E7-461C-838F-4BF53208964D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomRootRenderFeature.Windows", "CustomRootRenderFeature\CustomRootRenderFeature.Windows\CustomRootRenderFeature.Windows.csproj", "{B5D7B8FF-F3E7-461C-838F-4BF53208964D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRootRenderFeature.Game", "CustomRootRenderFeature\CustomRootRenderFeature.Game\CustomRootRenderFeature.Game.csproj", "{946EDCDB-3108-4BFD-8215-A6D719328FA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomRootRenderFeature.Game", "CustomRootRenderFeature\CustomRootRenderFeature.Game\CustomRootRenderFeature.Game.csproj", "{946EDCDB-3108-4BFD-8215-A6D719328FA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,8 +89,14 @@ Global
 		{946EDCDB-3108-4BFD-8215-A6D719328FA5}.Testing|Windows.ActiveCfg = Testing|Any CPU
 		{946EDCDB-3108-4BFD-8215-A6D719328FA5}.Testing|Windows.Build.0 = Testing|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B5D7B8FF-F3E7-461C-838F-4BF53208964D} = {D2861919-FFD5-4301-BC25-4EF8D65D86F4}
 		{946EDCDB-3108-4BFD-8215-A6D719328FA5} = {D2861919-FFD5-4301-BC25-4EF8D65D86F4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23C89C2C-C10C-411E-B94C-9DAD81C5805A}
 	EndGlobalSection
 EndGlobal

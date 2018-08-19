@@ -6,6 +6,7 @@ Demo implementation of a xenko root render feature that shows up in the Xenko gr
 
 If you inherit from RootRenderFeature the custom class shows up in the graphics compositor in GameStudio:
 ![Add to compositor](https://raw.githubusercontent.com/tebjan/Xenko.CustomRootRenderFeature/master/images/01_AddToCompositor.PNG)
+
 After adding the custom root render feature select it and add a SimpleGroupToRenderStageSelector and select the render stage in which you want to draw. Typically this is the *Opaque* stage.
 
 In order to render something you also need to make a class that inherits from RenderObject. These render objects will then be managed by the engine and passed into the root render feature each frame on Draw. This example also uses a custom shader for rendering.
@@ -26,6 +27,7 @@ Once this is done, you can add your entity component to any game entity:
 ![Add to entity](https://raw.githubusercontent.com/tebjan/Xenko.CustomRootRenderFeature/master/images/02_AddToEntity.PNG)
 
 The properties of your entity component will then show up in the UI:
+
 ![enter image description here](https://raw.githubusercontent.com/tebjan/Xenko.CustomRootRenderFeature/master/images/03_EntityComponentUI.PNG)
 
 The component will also render in the 3d editor and you can manipulate it with the gizmo of the game entity:

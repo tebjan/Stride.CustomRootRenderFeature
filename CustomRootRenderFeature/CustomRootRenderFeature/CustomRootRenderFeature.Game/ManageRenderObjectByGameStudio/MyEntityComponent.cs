@@ -19,8 +19,8 @@ namespace CustomRootRenderFeature
     /// The public properties with the attributes will become UI elements.
     /// </summary>
     [DataContract("MyEntityComponent")]
-    [Display("MyEntityComponent", Expand = ExpandRule.Auto)]
-    [DefaultEntityComponentRenderer(typeof(MyRenderProcessor))]
+    [Display("MyEntityComponent", Expand = ExpandRule.Once)]
+    [DefaultEntityComponentRenderer(typeof(MyEntityProcessor))]
     [ComponentOrder(100)]
     public sealed class MyEntityComponent : ActivableEntityComponent
     {
@@ -29,7 +29,6 @@ namespace CustomRootRenderFeature
         /// </summary>
         public MyEntityComponent()
         {
-            TextureScale = 1f;
         }
 
         /// <summary>
@@ -56,7 +55,7 @@ namespace CustomRootRenderFeature
         [DataMember(30)]
         [DefaultValue(1.0f)]
         [DataMemberRange(0.0, 5.0, 0.01f, 1.0f, 2)]
-        public float TextureScale { get; set; }
+        public float TextureScale { get; set; } = 1f;
 
         /// <summary>
         /// The render group for this component.

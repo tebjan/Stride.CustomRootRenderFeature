@@ -12,7 +12,7 @@ namespace CustomRootRenderFeature
     /// This class assigns parameters from the entity component (in th Game Studio UI) to the render object.
     /// It takes care of adding and removing the appropriate render objects to the visibility group.
     /// </summary>
-    public class MyRenderProcessor : EntityProcessor<MyEntityComponent, MyRenderObject>, IEntityComponentRenderProcessor
+    public class MyEntityProcessor : EntityProcessor<MyEntityComponent, MyRenderObject>, IEntityComponentRenderProcessor
     {
         public VisibilityGroup VisibilityGroup { get; set; }
 

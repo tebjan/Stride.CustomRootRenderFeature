@@ -24,6 +24,7 @@ Render objects need to be added and removed to the RenderObjects collection of a
 It is also possible to add and remove your custom render objects via the Game Studio UI to the scene. For that you need to implement an EntityComponent that can be added to a game Entity and an EntityProcessor that updates the custom render object and adds it to a visibility group. 
 
 Once this is done, you can add your entity component to any game entity:
+
 ![Add to entity](https://raw.githubusercontent.com/tebjan/Xenko.CustomRootRenderFeature/master/images/02_AddToEntity.PNG)
 
 The properties of your entity component will then show up in the UI:
@@ -31,5 +32,6 @@ The properties of your entity component will then show up in the UI:
 ![enter image description here](https://raw.githubusercontent.com/tebjan/Xenko.CustomRootRenderFeature/master/images/03_EntityComponentUI.PNG)
 
 The component will also render in the 3d editor and you can manipulate it with the gizmo of the game entity:
+
 ![Component gizmo](https://raw.githubusercontent.com/tebjan/Xenko.CustomRootRenderFeature/master/images/04_ComponentGizmo.PNG)
 

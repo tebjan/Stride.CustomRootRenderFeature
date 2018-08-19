@@ -1,5 +1,4 @@
-﻿
-﻿# Xenko.CustomRootRenderFeature
+# Xenko.CustomRootRenderFeature
 Demo implementation of a xenko root render feature that shows up in the Xenko graphics compositor. A root render feature can be used to do custom drawing and to build your own shader pipelines with the [xenko low level graphics API](https://github.com/xenko3d/xenko/tree/master/sources/engine/Xenko.Graphics). The advantage of it is, that the drawing will happen with the main camera matrix and backbuffer textures and therefore integrate correctly into the scene rendering.
 
 ## Code Overview

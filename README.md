@@ -21,12 +21,14 @@ The order of things should then basically be:
 ### Manage custom render objects by code
 Render objects need to be added and removed to the RenderObjects collection of a VisibilityGroup manually. This can be done in a script as you can see in the [MyRenderObjectManagerScript](https://github.com/tebjan/Xenko.CustomRootRenderFeature/blob/master/CustomRootRenderFeature/CustomRootRenderFeature/CustomRootRenderFeature.Game/ManageRenderObjectByCode/MyRenderObjectManagerScript.cs#L68).
 
+```csharp
     var myRenderObject = new MyRenderObject();
     myRenderObject.Prepare(GraphicsDevice);
     myRenderObject.Color = Color.Red;
     myRenderObject.Texture = Content.Load<Texture>("Xenko_Logo");
     myRenderObject.WorldMatrix = CalcTransformation();
     VisibilityGroup.RenderObjects.Add(myRenderObject);
+```
 
 ### Manage custom render objects in Game Studio
 It is also possible to add and remove your custom render objects via the Game Studio UI to the scene. For that you need to implement an EntityComponent that can be added to a game Entity and an EntityProcessor that updates the custom render object and adds it to a visibility group. The example classes can be found in the folder [CustomRootRenderFeature.Game\ManageRenderObjectByGameStudio](https://github.com/tebjan/Xenko.CustomRootRenderFeature/tree/master/CustomRootRenderFeature/CustomRootRenderFeature/CustomRootRenderFeature.Game/ManageRenderObjectByGameStudio)

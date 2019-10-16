@@ -34,5 +34,13 @@ namespace CustomRootRenderFeature
                     new VertexPositionNormalTexture(new Vector3( 0.5f, -0.5f, 0), normal, new Vector2(1, 1)),
                 }, BufferFlags.VertexBuffer, GraphicsResourceUsage.Immutable);
         }
+
+        float phase;
+        internal void Update()
+        {
+            phase += 0.1f;
+            phase %= 5;
+            TextureScale *= phase;
+        }
     }
 }

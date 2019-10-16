@@ -67,7 +67,7 @@ namespace CustomRootRenderFeature
                     myRenderObject.TextureScale = myEntityComponent.TextureScale;
                     myRenderObject.RenderGroup = myEntityComponent.RenderGroup;
                     myRenderObject.WorldMatrix = myEntityComponent.Entity.Transform.WorldMatrix;
-
+                    myRenderObject.Update();
                     MyRenderObject = myRenderObject;
                     break;
                 }

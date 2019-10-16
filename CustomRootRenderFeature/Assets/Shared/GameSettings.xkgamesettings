@@ -1,6 +1,6 @@
 !GameSettingsAsset
 Id: 1c67f335-13f9-4eae-9dd9-ded2f7a6c43c
-SerializedVersion: {Xenko: 2.1.0.3}
+SerializedVersion: {Xenko: 3.1.0.1}
 Tags: []
 DefaultScene: 09251eb4-52ce-40a8-afce-536287bdb1db:MainScene
 GraphicsCompositor: de096a62-f297-4ba1-9340-fbccb26bdee0:GraphicsCompositor
@@ -41,8 +41,7 @@ Defaults:
         DefaultGraphicsProfile: Level_11_0
         ColorSpace: Linear
         DisplayOrientation: LandscapeRight
-        PreferredGraphicsPlatform: Default
-    - !Xenko.Streaming.StreamingSettings,Xenko.Engine
+    - !Xenko.Streaming.StreamingSettings,Xenko.Rendering
         ManagerUpdatesInterval: 0:00:00:00.0330000
         ResourceLiveTimeout: 0:00:00:08.0000000
     - !Xenko.Assets.Textures.TextureSettings,Xenko.Assets

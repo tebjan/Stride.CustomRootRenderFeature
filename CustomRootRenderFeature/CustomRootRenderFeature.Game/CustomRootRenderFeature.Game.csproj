@@ -1,16 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
     <RootNamespace>CustomRootRenderFeature</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Xenko" Version="3.0.0.3">
-      <PrivateAssets>contentfiles;analyzers</PrivateAssets>
-    </PackageReference>
+    <PackageReference Include="Xenko.Core" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Xenko.Core.Assets.CompilerApp" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" IncludeAssets="build" />
+    <PackageReference Include="Xenko.Engine" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Xenko.Navigation" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Xenko.Particles" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Xenko.Physics" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Xenko.UI" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Xenko.Video" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Update="Background\BackgroundCubemapShader.cs">
       <DesignTime>True</DesignTime>
@@ -28,7 +30,6 @@
       <DependentUpon>MyCustomShader.xksl</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Background\BackgroundCubemapShader.xksl">
       <Generator>XenkoShaderKeyGenerator</Generator>

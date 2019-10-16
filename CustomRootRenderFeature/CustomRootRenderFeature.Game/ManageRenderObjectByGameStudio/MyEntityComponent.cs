@@ -10,6 +10,7 @@ using Xenko.Core.Mathematics;
 using Xenko.Engine;
 using Xenko.Engine.Design;
 using Xenko.Graphics;
+using Xenko.Rendering;
 
 namespace CustomRootRenderFeature
 {

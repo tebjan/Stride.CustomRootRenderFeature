@@ -1,9 +1,0 @@
-!Texture
-Id: cfeaab03-6453-4cb7-92a2-37f12d116959
-SerializedVersion: {Xenko: 2.0.0.0}
-Tags: []
-Source: !file ../../Resources/UODcCX_Z_400x400.jpg
-IsCompressed: false
-Type: !ColorTextureType
-    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
-IsStreamable: false

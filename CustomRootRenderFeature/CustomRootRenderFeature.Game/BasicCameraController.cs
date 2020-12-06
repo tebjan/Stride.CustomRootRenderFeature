@@ -128,7 +128,7 @@ namespace CustomRootRenderFeature
                 Input.UnlockMousePosition();
                 Game.IsMouseVisible = true;
             }
-            
+
             // Handle gestures
             foreach (var gestureEvent in Input.GestureEvents)
             {

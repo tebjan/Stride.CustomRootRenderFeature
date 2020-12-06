@@ -97,7 +97,6 @@ namespace CustomRootRenderFeature
                 // Set vertex buffer and draw
                 commandList.SetVertexBuffer(0, myRenderObject.VertexBuffer, 0, MyRenderObject.VertexDeclaration.VertexStride);
                 commandList.Draw(MyRenderObject.VertexCount, 0);
-
             }
         }
     }

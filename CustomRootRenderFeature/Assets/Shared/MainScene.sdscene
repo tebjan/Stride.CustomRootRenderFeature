@@ -21,7 +21,7 @@ Hierarchy:
                     cb5b63c808a1da9b0efdc1dd42008574: !TransformComponent
                         Id: 0a59cbc9-5c60-43e1-846c-aec956aafe77
                         Position: {X: 0.0, Y: 2.0, Z: 0.0}
-                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.258819044, W: -4.222196E-08}
+                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.25881904, W: -4.222196E-08}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     dda7c27b39da3872ffd8c9f69b5eaca7: !LightComponent
@@ -45,8 +45,8 @@ Hierarchy:
                 Components:
                     63cd890e3cf4a0c947287cb0a9c1df63: !TransformComponent
                         Id: bbe63d94-3005-4b17-9193-a11e17ed78dd
-                        Position: {X: 2.76464176, Y: 0.6, Z: 3.17955732}
-                        Rotation: {X: 0.0, Y: 0.190808773, Z: 0.0, W: 0.9816272}
+                        Position: {X: 2.7646418, Y: 0.6, Z: 3.1795573}
+                        Rotation: {X: 0.0, Y: 0.19080877, Z: 0.0, W: 0.9816272}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     8288b4272e90d43138da7082a623d09e: !CameraComponent
@@ -99,13 +99,13 @@ Hierarchy:
                 Components:
                     1a77dadb077ea5ccc340302c2cf93619: !TransformComponent
                         Id: cd8b7f8a-ba7c-42a7-9824-1863ca10f2a3
-                        Position: {X: 1.24355853, Y: 0.7071916, Z: -0.832229435}
+                        Position: {X: 1.2435585, Y: 0.7071916, Z: -0.83222944}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
                     65ac729ccf0907aa1a5cc58500832142: !MyEntityComponent
                         Id: aa425d3b-e657-45f4-9f28-725ed8600771
-                        Texture: cfeaab03-6453-4cb7-92a2-37f12d116959:Xenko_Logo
+                        Texture: 82eccd18-a0c7-4947-bee1-60d229a117dd:Stride_Logo
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         TextureScale: 2.0
         -   Entity:

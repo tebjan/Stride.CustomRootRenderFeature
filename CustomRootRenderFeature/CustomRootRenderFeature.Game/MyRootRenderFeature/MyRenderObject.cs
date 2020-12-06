@@ -35,7 +35,7 @@ namespace CustomRootRenderFeature
                 }, BufferFlags.VertexBuffer, GraphicsResourceUsage.Immutable);
         }
 
-        float phase;
+        private float phase;
         internal void Update()
         {
             phase += 0.1f;

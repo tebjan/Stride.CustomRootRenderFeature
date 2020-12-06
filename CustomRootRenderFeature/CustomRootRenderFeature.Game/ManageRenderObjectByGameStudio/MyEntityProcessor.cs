@@ -21,7 +21,6 @@ namespace CustomRootRenderFeature
         /// </summary>
         /// <value>The active render object.</value>
         public MyRenderObject MyRenderObject { get; private set; }
-        
 
         /// <inheritdoc />
         protected override void OnSystemRemove()

@@ -16,19 +16,19 @@ namespace CustomRootRenderFeature
         public int CountX { get; set; } = 10;
         public int CountY { get; set; } = 10;
 
-        List<MyRenderObject> myRenderObjects;
-        VisibilityGroup VisibilityGroup;
+        private List<MyRenderObject> myRenderObjects;
+        private VisibilityGroup VisibilityGroup;
 
-        float CurrentTime => (float)Game.UpdateTime.Total.TotalSeconds;
+        private float CurrentTime => (float)Game.UpdateTime.Total.TotalSeconds;
 
         public override void Start()
         {
             // Initialization of the script.
         }
 
-        int lastCountX;
-        int lastCountY;
-        bool initialized;
+        private int lastCountX;
+        private int lastCountY;
+
         public override void Update()
         {
             // Wait until visibility group is available
@@ -86,7 +86,7 @@ namespace CustomRootRenderFeature
                     var myRenderObject = new MyRenderObject();
                     myRenderObject.Prepare(GraphicsDevice);
                     myRenderObject.Color = Color.Red;
-                    myRenderObject.Texture = Content.Load<Texture>("Xenko_Logo");
+                    myRenderObject.Texture = Content.Load<Texture>("Stride_Logo");
                     myRenderObject.WorldMatrix = Matrix.Scaling(1.5f / CountX, 1.5f / CountY, 1);
                     myRenderObject.WorldMatrix.TranslationVector = CalcPosition(i, j);
                     newRenderObjects.Add(myRenderObject);
@@ -99,8 +99,8 @@ namespace CustomRootRenderFeature
 
         private Vector3 CalcPosition(int i, int j)
         {
-            var x = i * 2.0f / CountX + 2.5f;
-            var y = j * 2.0f / CountY + 0.1f;
+            var x = (i * 2.0f / CountX) + 2.5f;
+            var y = (j * 2.0f / CountY) + 0.1f;
             var z = (float)Math.Cos(CurrentTime + x + y) * 0.5f;
             return new Vector3(x, y, z);
         }

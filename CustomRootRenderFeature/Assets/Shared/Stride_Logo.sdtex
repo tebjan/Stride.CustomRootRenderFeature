@@ -1,0 +1,7 @@
+!Texture
+Id: 82eccd18-a0c7-4947-bee1-60d229a117dd
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/stride.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

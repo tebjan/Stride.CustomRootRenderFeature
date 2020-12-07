@@ -4,6 +4,7 @@
 shader MyCustomShader : ShaderBase, Transformation, Texturing, PositionStream4
 {
     stage float TextureScale;
+    [Color]
     stage float4 Color;
     
     //vertex shader

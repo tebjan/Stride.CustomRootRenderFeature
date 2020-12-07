@@ -19,6 +19,6 @@ namespace Stride.Rendering
     public static partial class MyCustomShaderKeys
     {
         public static readonly ValueParameterKey<float> TextureScale = ParameterKeys.NewValue<float>();
-        public static readonly ValueParameterKey<Vector4> Color = ParameterKeys.NewValue<Vector4>();
+        public static readonly ValueParameterKey<Color4> Color = ParameterKeys.NewValue<Color4>();
     }
 }

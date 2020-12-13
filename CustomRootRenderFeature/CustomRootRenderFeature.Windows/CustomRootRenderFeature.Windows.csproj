@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
     <OutputType>WinExe</OutputType>
@@ -12,9 +12,9 @@
     <!-- Force msbuild to check to rebuild this assembly instead of letting VS IDE guess -->
     <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
   </PropertyGroup>
-  
+
   <ItemGroup>
-    <ProjectReference Include="..\CustomRootRenderFeature.Game\CustomRootRenderFeature.Game.csproj" />
+    <ProjectReference Include="..\CustomRootRenderFeature\CustomRootRenderFeature.csproj" />
   </ItemGroup>
 
 </Project>

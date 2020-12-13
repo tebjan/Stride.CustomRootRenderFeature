@@ -1,7 +1,8 @@
 !Texture
-Id: 82eccd18-a0c7-4947-bee1-60d229a117dd
+Id: 2fb9f715-be6e-4ef5-8cbc-68332904bd4d
 SerializedVersion: {Stride: 2.0.0.0}
 Tags: []
-Source: !file ../../Resources/stride.jpg
+Source: ../Resources/skybox_texture_hdr.dds
 Type: !ColorTextureType
+    UseSRgbSampling: false
     ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,10 +1,10 @@
-using Xenko.Engine;
+using Stride.Engine;
 
 namespace CustomRootRenderFeature
 {
-    class CustomRootRenderFeatureApp
+    internal static class CustomRootRenderFeatureApp
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             using (var game = new Game())
             {

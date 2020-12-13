@@ -2,19 +2,19 @@
 // Distributed under the MIT license. See the LICENSE.md file in the project root for more information.
 
 using System;
-using Xenko.Core.Annotations;
-using Xenko.Core.Mathematics;
-using Xenko.Graphics;
-using Xenko.Rendering;
-using Xenko.Rendering.Skyboxes;
-using Xenko.Streaming;
+using Stride.Core.Annotations;
+using Stride.Core.Mathematics;
+using Stride.Graphics;
+using Stride.Rendering;
+using Stride.Rendering.Skyboxes;
+using Stride.Streaming;
 
 namespace CustomRootRenderFeature
 {
     /// <summary>
     /// This class will show up in the graphics compositor in the render feature list.
     /// </summary>
-    /// <seealso cref="Xenko.Rendering.RootRenderFeature" />
+    /// <seealso cref="Stride.Rendering.RootRenderFeature" />
     public class MyRootRenderFeature : RootRenderFeature
     {
         private MutablePipelineState pipelineState;
@@ -97,7 +97,6 @@ namespace CustomRootRenderFeature
                 // Set vertex buffer and draw
                 commandList.SetVertexBuffer(0, myRenderObject.VertexBuffer, 0, MyRenderObject.VertexDeclaration.VertexStride);
                 commandList.Draw(MyRenderObject.VertexCount, 0);
-
             }
         }
     }

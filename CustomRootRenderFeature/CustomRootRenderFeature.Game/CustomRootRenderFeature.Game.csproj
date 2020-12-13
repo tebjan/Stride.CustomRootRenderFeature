@@ -1,29 +1,29 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net461</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>CustomRootRenderFeature</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Xenko.Core" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
-    <PackageReference Include="Xenko.Core.Assets.CompilerApp" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" IncludeAssets="build" />
-    <PackageReference Include="Xenko.Engine" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
-    <PackageReference Include="Xenko.Navigation" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
-    <PackageReference Include="Xenko.Particles" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
-    <PackageReference Include="Xenko.Physics" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
-    <PackageReference Include="Xenko.UI" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
-    <PackageReference Include="Xenko.Video" Version="3.1.0.1-beta02-0747" PrivateAssets="contentfiles;analyzers" />
+    <PackageReference Include="Stride.Engine" Version="4.0.0.1-beta04-1317" />
+
+    <PackageReference Include="Stride.Video" Version="4.0.0.1-beta04-1317" />
+    <PackageReference Include="Stride.Physics" Version="4.0.0.1-beta04-1317" />
+    <PackageReference Include="Stride.Navigation" Version="4.0.0.1-beta04-1317" />
+    <PackageReference Include="Stride.Particles" Version="4.0.0.1-beta04-1317" />
+    <PackageReference Include="Stride.UI" Version="4.0.0.1-beta04-1317" />
+
+    <PackageReference Include="Stride.Core.Assets.CompilerApp" Version="4.0.0.1-beta04-1317" IncludeAssets="build;buildTransitive" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Effects\MyCustomShader.cs">
+    <Compile Update="Effects\MyCustomShader.sdsl.cs">
       <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
-      <DependentUpon>MyCustomShader.xksl</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Update="Effects\MyCustomShader.xksl">
-      <Generator>XenkoShaderKeyGenerator</Generator>
-      <LastGenOutput>MyCustomShader.cs</LastGenOutput>
+    <None Update="Effects\MyCustomShader.sdsl">
+      <LastGenOutput>MyCustomShader.sdsl.cs</LastGenOutput>
     </None>
   </ItemGroup>
 </Project>

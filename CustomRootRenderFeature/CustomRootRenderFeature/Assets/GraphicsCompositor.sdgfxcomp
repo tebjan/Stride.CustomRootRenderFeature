@@ -116,9 +116,9 @@ RenderFeatures:
                 TransparentRenderStage: ref!! 222c401b-20ef-4a99-88c6-56a84a7f15a9
                 EffectName: null
         PipelineProcessors: {}
-    8a841bdd768a72976553f93730984dfb*: !CustomRootRenderFeature.MyRootRenderFeature,CustomRootRenderFeature.Game
+    1f30aa86b5786fbdc2ec10ff26f8fc3f*: !CustomRootRenderFeature.MyRootRenderFeature,CustomRootRenderFeature
         RenderStageSelectors:
-            f46631b4d0cdff4eece94d3d207ed9fe: !Stride.Rendering.SimpleGroupToRenderStageSelector,Stride.Rendering
+            5b1951776f3ceea7ee4e884ddcfc7a2e: !Stride.Rendering.SimpleGroupToRenderStageSelector,Stride.Rendering
                 RenderStage: ref!! 8f02f3bd-87b3-4f20-abd0-9024782f48bf
                 EffectName: null
 SharedRenderers:
@@ -126,7 +126,7 @@ SharedRenderers:
         Id: cc30bf60-25ca-4308-8ff2-f4c76018790a
         Clear:
             Id: 4bc4b2ca-027e-4e4a-94cb-2912709bef5f
-            Color: {R: 0.40491876, G: 0.41189542, B: 0.43775, A: 1.0}
+            Color: {R: 0.40491876, G: 0.411895424, B: 0.43775, A: 1.0}
         LightProbes: true
         OpaqueRenderStage: ref!! 8f02f3bd-87b3-4f20-abd0-9024782f48bf
         TransparentRenderStage: ref!! 222c401b-20ef-4a99-88c6-56a84a7f15a9
@@ -148,7 +148,7 @@ SharedRenderers:
         Id: dd25e99e-4903-44ec-b941-b37c7441e730
         Clear:
             Id: 66a42307-1985-4316-871a-768449238c11
-            Color: {R: 0.40491876, G: 0.41189542, B: 0.43775, A: 1.0}
+            Color: {R: 0.40491876, G: 0.411895424, B: 0.43775, A: 1.0}
         LightProbes: true
         OpaqueRenderStage: ref!! 8f02f3bd-87b3-4f20-abd0-9024782f48bf
         TransparentRenderStage: ref!! 222c401b-20ef-4a99-88c6-56a84a7f15a9

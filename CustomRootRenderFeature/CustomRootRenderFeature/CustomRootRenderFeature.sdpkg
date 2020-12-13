@@ -8,10 +8,10 @@ Meta:
     RootNamespace: CustomRootRenderFeature
     Dependencies: null
 AssetFolders:
-    -   Path: !dir ../Assets/Shared
+    -   Path: !dir Assets
     -   Path: !dir Effects
 ResourceFolders:
-    - !dir ../Resources
+    - !dir Resources
 OutputGroupDirectories: {}
 ExplicitFolders: []
 Bundles: []
